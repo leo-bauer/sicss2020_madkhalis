@@ -16,7 +16,7 @@ from nltk.util import ngrams
 pd.set_option('display.float_format', lambda x: '%.f' % x)
 
 # Read json into a pandas dataframe
-output_dir = "C:/Users/leoba/PycharmProjects/sicss2020/research project/raw data/"
+output_dir = "path/raw data/"
 tweets_df = pd.read_json(output_dir + "20quat_alradae-tweets.json", lines=True)
 tweets_df2 = pd.read_json(output_dir + "604Sj66-tweets.json", lines=True)
 tweets_df3 = pd.read_json(output_dir + "aliabozguia1-tweets.json", lines=True)
@@ -42,7 +42,7 @@ mad_final = pd.concat([tweets_df, tweets_df2, tweets_df3, tweets_df4, tweets_df5
 mad_final.to_csv('mad_full.csv')
 
 # load from csv
-mad_final_csv = pd.read_csv('research project\\raw data\\mad_full.csv')
+mad_final_csv = pd.read_csv('path\\mad_full.csv')
 
 # count tweets
 len(mad_final_csv)
