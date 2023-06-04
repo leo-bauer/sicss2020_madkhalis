@@ -17,7 +17,7 @@ from sklearn.cluster import KMeans
 
 pd.set_option('display.float_format', lambda x: '%.f' % x)
 
-output_dir = "C:/Users/leoba/PycharmProjects/sicss2020/research project/raw data/"
+output_dir = "research project/raw data/"
 
 df = pd.read_json(output_dir + "20quat_alradae-tweets.json", lines=True)
 
